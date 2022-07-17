@@ -1,0 +1,79 @@
+---
+baseURL: https://www.fitztech.io/
+languageCode: en-us
+title: Fitztech
+theme: "PaperMod"
+buildDrafts: true
+params:
+  env: dev
+  title: Fitztech
+  description: An Information Technology Blog
+  keywords: [Blog, IT, Systems Adminsitration, SysAdmin, Azure, Cloud]
+  author: Kevin Fitzgerald
+  images: ["/profile/orig.png"]
+  hideFooter: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowRssButtonInSectionTermList: true
+  ShowToc: true
+  ShowFullTextinRss: true
+  assets:
+    disableHLJS: true
+    favicon: /favicon/favicon.ico
+    favicon16x16: /favicon/favicon-16x16.png
+    favicon32x32: /favicon/favicon-32x32.png
+    apple_touch_icon: /favicon/apple-touch-icon.png
+  profileMode:
+    enabled: true
+    title: Kevin Fitzgerald
+    subtitle: Systems Engineer | Coffee and Beer Snob | Audiobook Fan
+    imageUrl: /profile/orig.png
+    imageHeight: 120
+    imageWidth: 120
+  socialIcons:
+    - name: github
+      url: https://www.github.com/kevin-fitzgerald
+    - name: reddit
+      url: https://www.reddit.com/user/kevin-fitzgerald
+    - name: linkedin
+      url: https://www.linkedin.com/in/kevin-fitzgerald-160b821a6/
+    - name: RSS
+      url: index.xml
+menu:
+  main:
+    - identifier: archive
+      name: Archive
+      url: /archive/
+      weight: 10
+    - identifier: categories
+      name: Categories
+      url: /categories/
+      weight: 20
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 30
+    - identifier: search
+      name: Search
+      url: /search
+      weight: 40
+taxonomies:
+  category: categories
+  tag: tags
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+pygmentsUseClasses: true
+markup:
+  highlight:
+    codeFences: true
+    guessSyntax: false
+    lineNos: true
+    noClasses: false
+    style: native
+minify:
+  disableXML: true
+  minifyOutput: true
