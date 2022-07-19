@@ -2,8 +2,9 @@
 baseURL: https://www.fitztech.io/
 languageCode: en-us
 title: Fitztech
-theme: "PaperMod"
+theme: PaperMod
 enableRobotsTXT: true
+enableEmoji: true
 buildDrafts: false
 buildFuture: false
 buildExpired: false

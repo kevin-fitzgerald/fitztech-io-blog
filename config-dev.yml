@@ -4,6 +4,7 @@ languageCode: en-us
 title: Fitztech
 theme: "PaperMod"
 buildDrafts: true
+enableEmoji: true
 params:
   env: dev
   title: Fitztech
